@@ -68,7 +68,7 @@ import glob
 import requests
 import shutil
 
-inputFiles = glob.glob('input/*')
+inputFiles = glob.glob('1.input/*')
 if len(inputFiles) == 0:
   URL = "https://blogger.googleusercontent.com/img/a/AVvXsEjNFURpuYCoogk0ps9lW31Ns5xSR-c6PK8cWZIIYumBwO_JOcgLOMHq27SAZKWv0fhS4NmU4052XsnjMwn2LrVEqBVyChlmHKQ2K8Wi-hOLbE9AUsAOvgV29tqBa0etbV_xzu4nCAOvzoqpAHaFkgBAtBNF5BBc5A64N7jHKIVUH8pHPslFpXA"
   response = requests.get(URL)
@@ -151,7 +151,7 @@ import subprocess
 
 cropper = Cropper(face_percent=70)
 
-inputFiles = glob.glob('inpaint/*')
+inputFiles = glob.glob('2.inpaint/*')
 for inputFile in inputFiles:
   p = Path(inputFile)
   name = p.name
